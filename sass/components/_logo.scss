@@ -1,0 +1,22 @@
+.logo {
+    display: block;
+    font-family: var(--second-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    
+}
+
+.logo__fp {
+    color: var(--accent-color);
+}
+.footer__logo {
+    margin-bottom: 20px;
+}
+.logo__sp--dark {
+    color: #000000;
+}
+.logo__sp--inverse {
+    color: var(--white-text-color);
+}

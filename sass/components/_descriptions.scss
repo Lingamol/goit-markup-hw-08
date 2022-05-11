@@ -1,0 +1,42 @@
+.descriptions-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.descriptions-list__item {
+    width: 270px;
+    margin-right: 30px;
+    &:last-child {
+        margin-right: 0;
+      }
+}
+
+.descriptions-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+}
+
+
+.descriptions-list__caption {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-header-color);
+}
+
+.descriptions-list__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
