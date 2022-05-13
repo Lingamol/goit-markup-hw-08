@@ -25,14 +25,18 @@
 
 .banner__title {
     margin-top: 0;
-    margin-bottom: 40px;
-
+    margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size:26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-text-color);
+    @media screen and(min-width:1200px) {
+    margin-bottom: 40px;
+    font-size: 44px;
+    line-height: 1.36;
+    }
 }
 .banner__button{
     min-width: 200px;

@@ -16,7 +16,11 @@ textarea {
     list-style: none;
     
 }
-
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .section-title {
     margin-top: 0;
     margin-bottom: 50px;
@@ -31,10 +35,13 @@ textarea {
 
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and(min-width:1200px) {
+        padding-top: 94px;
+            padding-bottom: 94px;
 }
-
+}
 body {
     font-family: var(--main-font), var(--alt-main-font);
     color: var(--main-text-color);

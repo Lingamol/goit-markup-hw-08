@@ -1,3 +1,16 @@
+
+.address-list {
+    @media screen and(min-width:480px)and(max-width:767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+}
+
+
+
+
 .address-list__item {
     margin-bottom: 9px;
     &:last-child {

@@ -1,7 +1,17 @@
 .portfolio-projects__menu-list {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  
+  // 
+  @media screen and(min-width:480px)and(max-width:767px) {
+   flex-wrap: wrap; margin-bottom: 40px;
+  }
+    @media screen and(min-width:768px) {
+    justify-content: center;
+    margin-bottom: 50px;
+    }
+  // @media screen and(min-width:1200){
+  //   flex-wrap: nowrap;
+  // }
 }
 
 .menu-list__btn {
@@ -30,6 +40,9 @@
       }
 }
 .menu-list__item {
+  @media screen and(min-width:480px)and(max-width:767px) {
+    margin-bottom: 21px;}
+    
   margin-right: 8px;
   &:last-child {
       margin-right: 0;

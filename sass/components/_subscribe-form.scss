@@ -1,3 +1,13 @@
+.subscribe-form{
+    @media screen and(min-width:480px)and(max-width:1199px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
 .subscribe-form__label {
     display: block;
     margin-bottom: 20px;
@@ -7,12 +17,14 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $white-text-color;
+    
 }
 
 .subscribe-form__email {
+    margin-bottom: 20px;
     padding: 15px 16px;
-    margin-right: 12px;
-    width: 358px;
+    
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -31,11 +43,23 @@
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
     }
+        @media screen and(min-width:1200px) {
+            width: 358px;
+            margin-bottom: 0;
+            margin-right: 12px;
 }
-
+}
 .subscribe-form__position {
-    display: flex;
-    flex-direction: row;
+    @media screen and(min-width:480px)and(max-width:1199px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    @media screen and(min-width:1200px){
+        display: flex;
+        flex-direction: row;}
+  
 }
 
 .subscribe-form__but {
