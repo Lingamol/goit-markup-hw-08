@@ -1,0 +1,16 @@
+.mob-menu-list{
+    margin-left: 40px;
+}
+.mob-menu-list__item{
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
+.mob-menu__link{
+    color: var(--main-header-color);
+    font-weight: 500;
+        font-size: 40px;
+        line-height: 1.18;
+        // text-align: center;
+        letter-spacing: 0.02em;
+}

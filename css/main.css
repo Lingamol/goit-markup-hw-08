@@ -149,6 +149,47 @@ body {
   }
 }
 
+.menu-open-btn {
+  display: none;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .menu-open-btn {
+    border: none;
+    background-color: transparent;
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
+
+.menu-open-btn:hover .menu-open-btn__icon {
+  fill: var(--accent-color);
+}
+
+.menu-open-btn:focus .menu-open-btn__icon {
+  fill: var(--accent-color);
+}
+
+.menu-close-btn {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+  padding: 0;
+  top: 10px;
+  right: 15px;
+}
+
+.menu-close-btn:hover .menu-close-btn__icon {
+  fill: var(--accent-color);
+}
+
+.menu-close-btn:focus .menu-close-btn__icon {
+  fill: var(--accent-color);
+}
+
 .logo {
   display: block;
   font-family: var(--second-font);
@@ -1238,4 +1279,77 @@ body {
 
 .modal__agreement-position {
   position: relative;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.mob-menu-list {
+  margin-left: 40px;
+}
+
+.mob-menu-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.mob-menu__link {
+  color: var(--main-header-color);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+
+.mob-menu-contacts-list {
+  margin-left: 40px;
+  margin-bottom: 64px;
+}
+
+.mob-menu-contacts-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.mob-menu-contacts-list__item:last-child .mob-menu-contacts-list__link {
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.mob-menu-contacts-list__link {
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+
+.mob-menu-soc-list {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.mob-menu-soc-list__item {
+  position: relative;
+}
+.mob-menu-soc-list__item:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-menu-soc__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */
