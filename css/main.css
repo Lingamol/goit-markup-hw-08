@@ -171,6 +171,8 @@ body {
 
 .menu-close-btn {
   position: absolute;
+  display: flex;
+  justify-content: start;
   border: none;
   background-color: transparent;
   display: block;
@@ -931,7 +933,7 @@ body {
 .portfolio-projects__menu-list {
   display: flex;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .portfolio-projects__menu-list {
     flex-wrap: wrap;
     margin-bottom: 40px;
@@ -968,7 +970,7 @@ body {
 .menu-list__item {
   margin-right: 8px;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .menu-list__item {
     margin-bottom: 21px;
   }
@@ -1098,7 +1100,7 @@ body {
   top: 50%;
   left: 50%;
   padding: 40px;
-  width: 528px;
+  width: 100%;
   min-height: 581px;
   transform: rotate(360deg) translate(-50%, -50%) scale(1);
   border-radius: 4px;
@@ -1108,6 +1110,16 @@ body {
 .backdrop.is-hidden .modal {
   transform: rotate(0) scale(0.3);
   opacity: 0.1;
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__title {
@@ -1308,6 +1320,7 @@ body {
   padding-top: 48px;
   padding-bottom: 48px;
   z-index: 10;
+  outline: 2px solid green;
 }
 .mob-menu .container {
   display: flex;

@@ -2,7 +2,7 @@
   display: flex;
   
   // 
-  @media screen and(min-width:480px)and(max-width:767px) {
+  @media screen and(max-width:767px) {
    flex-wrap: wrap; margin-bottom: 40px;
   }
     @media screen and(min-width:768px) {
@@ -40,7 +40,7 @@
       }
 }
 .menu-list__item {
-  @media screen and(min-width:480px)and(max-width:767px) {
+  @media screen and(max-width:767px) {
     margin-bottom: 21px;}
     
   margin-right: 8px;

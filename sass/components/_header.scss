@@ -37,6 +37,8 @@
 }
 .menu-close-btn {
     position: absolute;
+    display: flex;
+    justify-content: start;
 border: none;
 background-color: transparent;
 display: block;
