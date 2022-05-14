@@ -12,11 +12,14 @@
 }
 .descriptions-list__item {
 
-    width: 450px;
+    
     margin-bottom: 30px;
     &:last-child {
                margin-bottom: 0;
              }
+                         @media screen and(min-width:480px)and(max-width:767px){
+width: 450px;
+                         }
  @media screen and(min-width:768px)and(max-width:1199px) {
 
     width: 354px;

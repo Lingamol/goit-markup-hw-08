@@ -1,6 +1,6 @@
 .contacts-list {
     display: flex;
-@media screen and(min-width:480px)and(max-width:767px) {
+@media screen and(max-width:767px) {
         display: none;
     }
 flex-direction: column;
@@ -11,7 +11,7 @@ flex-direction: column;
 }
 .contacts 
 { 
-    @media screen and(min-width:480px)and(max-width:767px) {
+    @media screen and(max-width:767px) {
         display: flex;
         flex-direction: column;
         align-items: center;
