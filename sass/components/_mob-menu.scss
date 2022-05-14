@@ -4,16 +4,21 @@
     background-color: $white-bg-color;
     height: 100vh;
     width: 100vw;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    
     z-index: 5;
     .container{
-       
+        padding-top: 48px;
+        padding-bottom: 48px;
+       position: relative;
         display: flex;
         flex-direction: column;
         height: 100%;
         justify-content: space-between;
         overflow: auto;
+        // @media screen and(min-width:480px) {
+        //     width: 480px;
+            
+        // }
         
     }
 }
