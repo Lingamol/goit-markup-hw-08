@@ -5,6 +5,7 @@
     &:not(:last-child){
         margin-bottom: 30px;
     }
+    
 }
 .mob-menu__link{
     color: var(--main-header-color);
@@ -13,4 +14,7 @@
         line-height: 1.18;
         // text-align: center;
         letter-spacing: 0.02em;
+        &--curent {
+                color: var(--accent-color);
+            }
 }

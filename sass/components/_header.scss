@@ -36,9 +36,9 @@
     fill: var(--accent-color);
 }
 .menu-close-btn {
-    position: absolute;
-    display: flex;
-    justify-content: start;
+position: absolute;
+display: flex;
+justify-content: start;
 border: none;
 background-color: transparent;
 display: block;
@@ -47,7 +47,7 @@ cursor: pointer;
 padding: 0;
 top: 10px;
 right: 15px;
-   z-index: 2;
+
 
 }
 .menu-close-btn:hover .menu-close-btn__icon {
