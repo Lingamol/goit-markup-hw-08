@@ -1426,9 +1426,12 @@ body {
 }
 
 .mob-menu {
+  position: fixed;
+  top: 0;
   background-color: #ffffff;
   height: 100vh;
   width: 100vw;
+  z-index: 10;
 }
 @media screen and (max-width: 767px) {
   .mob-menu {
