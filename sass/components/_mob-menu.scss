@@ -1,24 +1,32 @@
 .mob-menu{
-    position: fixed;
-    top: 0;
+    // position: fixed;
+    // top: 0;
     background-color: $white-bg-color;
     height: 100vh;
     width: 100vw;
+    z-index: 10;
+    @media screen and(max-width:767px) {
+            position: fixed;
+                top: 0;
+        }
+    @media screen and(min-width:768px) {
+            display: none;
     
-    z-index: 5;
+        }
+
     .container{
         padding-top: 48px;
         padding-bottom: 48px;
-       position: relative;
+        position: relative;
         display: flex;
         flex-direction: column;
         height: 100%;
         justify-content: space-between;
         overflow: auto;
-        // @media screen and(min-width:480px) {
-        //     width: 480px;
+        @media screen and(max-width:767px) {
+            width: 100%;
             
-        // }
+        }
         
     }
 }
