@@ -35,13 +35,20 @@ img {
 
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--main-header-color);
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .section {
@@ -198,13 +205,9 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .logo {
-    padding-top: 26px;
-    padding-bottom: 26px;
     font-size: 26px;
     line-height: 1.19;
   }
@@ -212,6 +215,17 @@ body {
 
 .logo__fp {
   color: var(--accent-color);
+}
+
+.header__logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 .footer__logo {
@@ -385,8 +399,8 @@ body {
 }
 
 .banner__overlay {
-  max-width: 1600px;
-  height: 600px;
+  width: 100%;
+  height: 100%;
   margin-right: auto;
   margin-left: auto;
   /* outline: 4px solid green; */
@@ -395,10 +409,37 @@ body {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 480px) {
+  .banner__overlay {
+    max-width: 480px;
+    height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bannerbg.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .banner__overlay {
+    max-width: 768px;
+    height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bannerbg.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner__overlay {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bannerbg.jpg);
+  }
+}
 
 .baner__content {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .baner__content {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .banner__title {
@@ -1025,6 +1066,7 @@ body {
     margin-right: 30px;
     margin-bottom: 30px;
     width: 354px;
+    flex-basis: calc((100% - 30px) / 2);
   }
   .projects-list__item:nth-last-child(-n+2) {
     margin-bottom: 0;
@@ -1061,7 +1103,7 @@ body {
 .projects-list__parag {
   margin-top: 0;
   margin-bottom: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -1079,8 +1121,20 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+@media screen and (min-width: 678px) {
+  .projects-list__parag {
+    padding: 49px 24px;
+  }
+}
+@media screen and (min-width: 678px) {
+  .projects-list__parag {
+    padding: 63px 24px;
+  }
+}
 
 .projects-list__wrapper {
+  display: flex;
+  flex-direction: column;
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -1153,10 +1207,15 @@ body {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-header-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .button-close {
@@ -1238,6 +1297,12 @@ body {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+@media screen and (min-width: 1200px) {
+  .modal__textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
 
 .modal__position {
   position: relative;
@@ -1267,17 +1332,29 @@ body {
 
 .modal__agreement {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .modal__agreement {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal__agreement-two {
   color: var(--accent-color);
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .modal__agreement-two {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .modal__agreement-two::after {
   width: 100%;

@@ -23,13 +23,18 @@ img{
 }
 .section-title {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--main-header-color);
+    @media screen and(min-width:1200px){
+        font-size: 36px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+    }
 }
 
 
