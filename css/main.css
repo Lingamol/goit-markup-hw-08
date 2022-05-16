@@ -1180,13 +1180,12 @@ body {
 }
 
 .modal {
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 40px;
   width: 100%;
-  min-height: 609px;
-  max-width: 450px;
   border-radius: 4px;
   background: #ffffff;
 }
@@ -1194,12 +1193,9 @@ body {
   transform: rotate(0) scale(0.3);
   opacity: 0.1;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1341,28 +1337,28 @@ body {
 
 .modal__agreement {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 }
 @media screen and (min-width: 1200px) {
   .modal__agreement {
-    font-size: 12px;
-    line-height: 1.17;
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 
 .modal__agreement-two {
   color: var(--accent-color);
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 }
 @media screen and (min-width: 1200px) {
   .modal__agreement-two {
-    font-size: 12px;
-    line-height: 1.17;
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 .modal__agreement-two::after {
