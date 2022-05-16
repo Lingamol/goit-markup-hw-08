@@ -1,31 +1,24 @@
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background: $baner-background;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: $baner-background;
 }
-.footer__tab{
-    display: flex;
-   flex-direction: column;
-    @media screen and(min-width:768px) {
-    
+.footer__tab {
+  display: flex;
+  flex-direction: column;
+  @media screen and(min-width:768px) {
     flex-direction: row;
-        align-items: baseline;
+    align-items: baseline;
     justify-content: space-evenly;
     margin-bottom: 60px;
-    
-    
-        }
-                @media screen and(min-width:1200px){
-                    margin-bottom: 0;
-                }
-
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 0;
+  }
 }
-
-
-
 .footer__contacts {
-   
-    @media screen and(min-width:1200px) {
+  @media screen and(min-width:1200px) {
     flex-grow: 1;
-    margin-right: 70px;}
+    margin-right: 70px;
+  }
 }

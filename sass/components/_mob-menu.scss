@@ -1,32 +1,25 @@
-.mob-menu{
+.mob-menu {
+  background-color: $white-bg-color;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  @media screen and(max-width:767px) {
     position: fixed;
     top: 0;
-    background-color: $white-bg-color;
-    height: 100vh;
-    width: 100vw;
-    z-index: 10;
-    @media screen and(max-width:767px) {
-            position: fixed;
-                top: 0;
-        }
-    @media screen and(min-width:768px) {
-            display: none;
-    
-        }
+    left: 0;
+  }
+  @media screen and(min-width:768px) {
+    display: none;
+  }
 
-    .container{
-        padding-top: 48px;
-        padding-bottom: 48px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        justify-content: space-between;
-        overflow: auto;
-        @media screen and(max-width:767px) {
-            width: 100%;
-            
-        }
-        
-    }
+  .container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    overflow: auto;
+  }
 }

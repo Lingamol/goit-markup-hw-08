@@ -1,38 +1,34 @@
 .logo {
-    display: block;
-    font-family: var(--second-font);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.17;
-  
-    @media screen and(min-width:1200px) {
-        font-size: 26px;
-        line-height: 1.19;
-    }
- 
-    
+  display: block;
+  font-family: var(--second-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  @media screen and(min-width:1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__fp {
-    color: var(--accent-color);
-
+  color: var(--accent-color);
 }
-.header__logo{
-padding-top: 16px;
-padding-bottom: 16px;
-@media screen and(min-width:768px) {
+.header__logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and(min-width:768px) {
     padding-top: 26px;
     padding-bottom: 26px;
-
-}   
+  }
 }
 .footer__logo {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .logo__sp--dark {
-    color: #000000;
+  color: #000000;
 }
 .logo__sp--inverse {
-    color: var(--white-text-color);
+  color: var(--white-text-color);
 }
