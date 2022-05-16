@@ -1,7 +1,6 @@
 .portfolio-projects__menu-list {
   display: flex;
 
-  //
   @media screen and(max-width:767px) {
     flex-wrap: wrap;
     margin-bottom: 40px;
@@ -10,9 +9,6 @@
     justify-content: center;
     margin-bottom: 50px;
   }
-  // @media screen and(min-width:1200){
-  //   flex-wrap: nowrap;
-  // }
 }
 .menu-list__btn {
   font-family: inherit;
