@@ -1,11 +1,12 @@
 .portfolio-projects__menu-list {
   display: flex;
-
-  @media screen and(max-width:767px) {
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-  }
+  margin-bottom: 40px;
+  flex-wrap: wrap;
   @media screen and(min-width:768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and(min-width:1200px) {
     justify-content: center;
     margin-bottom: 50px;
   }
